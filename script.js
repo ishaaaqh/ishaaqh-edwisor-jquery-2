@@ -36,7 +36,7 @@ let getMoviesByText = searchText => {
   $.ajax({
     type: "GET",
     dataType: "json",
-    url: `http://www.omdbapi.com/?apikey=883b3010&t=${searchText}`,
+    url: `http://www.omdbapi.com/?apikey=9e27197f&t=${searchText}`,
     success: response => {
       console.log(response);
       if (response.Response == "True") {
@@ -79,7 +79,7 @@ let getMoviesById = searchText => {
   $.ajax({
     type: "GET",
     dataType: "json",
-    url: `http://www.omdbapi.com/?apikey=883b3010&i=${searchText}`,
+    url: `http://www.omdbapi.com/?apikey=9e27197f&i=${searchText}`,
     success: response => {
       if (response.Response == "True") {
         $("#moviePoster").html(`<img src=${response.Poster} class="image"/>`);
